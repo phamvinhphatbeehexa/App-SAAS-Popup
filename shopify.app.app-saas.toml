@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "app-saas"
+client_id = "4dc6590fe8b3e47cc8eb899c725371e1"
+application_url = "https://howard-file-tied-exhibitions.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://howard-file-tied-exhibitions.trycloudflare.com/auth/callback",
+  "https://howard-file-tied-exhibitions.trycloudflare.com/auth/shopify/callback",
+  "https://howard-file-tied-exhibitions.trycloudflare.com/api/auth/callback",
+  "https://howard-file-tied-exhibitions.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "beehexa.myshopify.com"
